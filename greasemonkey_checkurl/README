@@ -1,0 +1,12 @@
+If you use Jenkins or Hudson for a project of reasonable size, you may find that it becomes slower on days you have been configuring a lot.
+This is often due to some ajax magic on Jenkins that checks to see if the paths/globs you type into the archive artifacts box are valid - it can spend a long time searching these.
+
+Required:
+* Firefox
+* The Greasemonkey plugin
+
+Install
+* Open the JS file, and if Greasemonkey is installed, firefox should recognise the script as such. 
+
+When this is active, you will not notice a visual difference, but your Jenkins instance should no longer be receiving the AJAX checkurl calls for the archive artifacts list.
+
